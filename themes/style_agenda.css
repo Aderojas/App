@@ -1,0 +1,878 @@
+
+/* Tableta */
+@import url("style_agenda_big.css") only screen and (min-width:321px) and (max-width:768px);
+/* Escritorio */
+@import url("style_agenda_big.css") only screen and (min-width:769px);
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #fff;
+}
+
+.Input{
+    text-decoration: none;
+    font-family: Verdana,Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #2859A6;
+}
+
+.Estilo1 {
+    color: #2859A6;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.submit{
+    color:#2859A6;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #E0E8F3;
+}
+
+.Estilo41 {
+    color: #E0E8F3
+}
+
+.Estilo43 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px; 
+}
+
+a:link {
+    color: #2859A6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2859A6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #89B04E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #89B04E;
+    text-decoration: none;
+}
+
+.Estilo107 {
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    color: #88ACE1;
+}
+
+.Estilo3 {
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    color: #FFFFFF; 
+}
+
+.Estilo108 {
+    color: #728CBF;
+}
+
+#tabla_principal{
+    border:1px;
+    text-align: center;
+    cellpadding:0 ;
+    cellspacing:0 ;
+    border-color:#FFFFFF;
+    margin-top:20px;
+}
+
+.imgmiddle {
+    vertical-align:middle;
+    margin-left: 10px;
+}
+
+.distance_right {
+    padding-right: 20px;
+}
+
+.distance_left {
+    padding-left: 20px;
+}
+
+.textmiddle {
+    text-decoration: none;
+    text-align: left;
+    font-weight: bolder;
+}
+.textmiddleblue {
+    text-decoration: none;
+    text-align: left;
+    font-weight: bolder;
+    color:#006497;
+}
+
+h2 {
+    text-decoration: none;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 14px;
+    color:#006497;
+}
+
+.red {
+    text-decoration: none;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 14px;
+    color:red;
+}
+
+.paginacion { 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color:#006497; 
+    text-decoration: none;
+    padding: 10px 10px 10px 10px; 
+    margin-right: 10px;
+}
+
+.paginacion:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color:#fff; 
+    padding: 10px 10px 10px 10px; 
+    background-color: #006497;
+    text-decoration: none;
+    margin-right: 10px; 
+}
+
+hr{
+    color: #006497;
+    margin-left: 15px;
+    width:20%;
+}
+
+.calendar {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-shadow: none;
+}
+
+.calendar caption {
+    margin: 0;
+    padding: .3em 0;
+    /*background: #ffa51e;*/
+    background: #eee;
+    border: 1px solid #fff;
+}
+
+.calendar th {
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    background: #fff;
+}
+
+.calendar td {
+    border: 1px solid #fff;
+    padding: .1em .3em ;
+    width: 30px;
+    height:30px;
+    text-align: center;
+}
+        
+.calendar a {
+    color: #000;
+    text-decoration: none;
+}
+
+.calendar td.today {
+    background: #409163;
+}
+
+.calendar td.selected {
+    border: 1px dotted #ff7800;
+}
+        
+.calendar td.highlighted {
+    background: #003366;
+}
+
+.calendar td.highlighted a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.highlighted a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.highlighted a:hover  {
+    color: #000;
+}
+
+.calendar td.vacaciones {
+    color:#fff;
+    background: #7F006E;
+}
+
+.calendar td.vacaciones a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.vacaciones a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.vacaciones a:hover  {
+    color: #000;
+}
+
+.calendar td.manana {
+    background-image: url("../images/vacacionesAgTop.png");
+    background-repeat: no-repeat;
+}
+
+.calendar td.tarde {
+    background-image: url("../images/vacacionesAgDown.png");
+    background-repeat: no-repeat;
+}
+
+
+.calendar td.prestacion {
+    background: #FFD800;
+}
+
+.calendar td.anulado {
+    font-weight:bold;
+    background: #007F0E;
+}
+
+.calendar td.confirmado {
+    color:#fff;
+    background: #000;
+}
+
+
+
+.calendar td.prestacion_manana {
+    background: #FFD800;
+}
+
+.calendar td.anulado_manana {
+    font-weight:bold;
+    background: #007F0E;
+}
+
+.calendar td.confirmado_manana {
+    color:#fff;
+    background: #000;
+}
+
+
+.calendar td.prestacion_tarde {
+    background: #FFD800;
+}
+
+.calendar td.anulado_tarde {
+    font-weight:bold;
+    background: #007F0E;
+}
+
+.calendar td.confirmado_tarde {
+    color:#fff;
+    background: #000;
+}
+
+
+
+
+.calendar td.confirmado a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.confirmado a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.confirmado a:hover  {
+    color: #000;
+}
+
+
+.calendar td.confirmado_manana a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.confirmado_manana a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.confirmado_manana a:hover  {
+    color: #000;
+}
+
+
+.calendar td.confirmado_tarde a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.confirmado_tarde a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.confirmado_tarde a:hover  {
+    color: #000;
+}
+
+.calendar td.absentismo {
+    background: #4960E5;
+}
+
+.calendar td.absentismo a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.absentismo a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.absentismo a:hover  {
+    color: #000;
+}
+
+.calendar td.absentismo_pendiente {
+    background-image: url("../images/permisoPendiente100x80.png");
+    color:black;
+}
+
+.calendar td.absentismo_pendiente a:link  {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.calendar td.absentismo_pendiente a:visited  {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.calendar td.absentismo_pendiente a:hover  {
+    color: #000;
+}        
+        
+.calendar td.sanconsultor {
+    color:#fff;
+    background: #7F006E;
+}
+        
+.calendar td.sanconsultor a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.sanconsultor a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.coincidencias a:hover{
+    color:#000;
+}
+
+.calendar td.coincidencias {
+    color:#fff;
+    background: #FF6A00;
+}
+
+.calendar td.coincidencias a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.coincidencias a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.manana_tarde a:hover{
+    color:#000;
+}
+
+.calendar td.manana_tarde a:hover{
+    color:#000;
+}
+
+.calendar td.manana_tarde {
+    color:#fff;
+    background: #808080;
+}
+
+.calendar td.manana_tarde a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.manana_tarde a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calendar td.manana_tarde a:hover{
+    color:#000;
+}
+
+.calendar td:hover, .calendar td.today:hover,
+.calendar td.selected:hover, .calendar td.highlighted:hover,
+.calendar td.prestacion:hover, .calendar td.absentismo:hover,
+.calendar td.absentismo_pendiente:hover,
+.calendar td.manana:hover, .calendar td.tarde:hover{
+    background: #cff;
+    border: 1px solid #09f;
+}
+
+table.calendar td.pad {
+    color: #999;
+    background: #fff;
+}
+
+table.calendar td.pad:hover {
+    background: none;
+    border: 0;
+}
+
+.sunday, .saturday {
+    background: #f0f0f0;
+}
+
+.domingo, .sábado   {
+    background: red;
+    color: white;
+}
+
+#year {
+    padding: 0;
+    width: 725px;
+    list-style: none;
+}
+
+.tabel {
+    border: 1px solid;
+    border-color: black;
+}
+
+.subraya {
+    text-decoration: underline;
+}
+
+#year:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#year li {
+    float: left;
+    padding: 0 .5em .5em 0;
+    height: 550px;
+    width: 600px;
+}
+
+.alternativa{
+    font-size: 12px;
+}
+
+.alt_selected{  
+    color: #FFFFFF;
+    background: #FF0000;
+}
+
+#hor-zebra{
+    font-family:Verdana, Sans-Serif;
+    font-size:12px;
+    text-align:left;
+    border-collapse:collapse;
+    margin:20px;
+}
+
+#hor-zebra th{
+    font-size:14px;
+    font-weight:normal;
+    color:#039;
+    padding:10px 8px;
+}
+
+#hor-zebra td{
+    color:#669;
+    padding:8px;
+}
+
+#hor-zebra .odd{
+    background:#e8edff;
+}
+
+.caja_texto{
+    font-family: Verdana,Arial, Helvetica, sans-serif; 
+    font-size: 11px;
+    font-style: normal;
+}
+
+.Texto_Negro_Normal_12 {
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal; 
+    color:#000000;
+}
+
+.Texto_Negro_Bold_12 { 
+    font-family: Verdana,Arial, Helvetica, sans-serif; 
+    font-size: 12px;
+    font-style: normal; 
+    font-weight: bold; 
+    color:#000000;
+}
+
+.Texto_Negro_Normal_14 { 
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal; 
+    color:#000000;
+}
+
+.Texto_Negro_Bold_14 {
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    font-style: normal;
+    font-weight: bold;
+    color:#000000;
+}
+
+.texto_detalle{
+    font-family: Verdana,Arial, Helvetica, sans-serif; 
+    font-size: 8px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.texto_detalle2{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 10px; 
+    font-style: normal; 
+    font-weight: bold;
+}
+
+#frmChange a {
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+#frmChange a:hover {
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+td.highlighted {
+    color:#fff;
+    background: #003366;
+}
+
+td.vacaciones {
+    color:#fff;
+    background: #7F006E;
+}
+
+td.manana {
+    background: #FF7F7F;
+}
+
+td.tarde {
+    background: #FF006E;
+}
+
+td.prestacion {
+    background: #FFD800;
+}
+
+td.anulado {
+    font-weight:bold;
+    background: #007F0E;
+}
+
+td.confirmado {
+    color:#fff;
+    background: #000;
+}
+
+td.absentismo {
+    color:#fff;
+    background: #4960E5;
+}
+
+td.absentismo_pendiente {
+    background-image: url("../images/permisoPendiente100x80.png") ;
+    background-repeat: no-repeat;
+    color:red;
+} 
+
+td.sanconsultor {
+    color:#fff;
+    background: #7F006E;
+}
+
+td.coincidencias {
+    color:#fff;
+    background: #FF6A00;
+}
+
+td.manana_tarde {
+    color:#fff;
+    background: #808080;
+}
+
+.tabla_agenda{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+.ui-content {
+  clear:both;
+  float:none;
+}
+
+/*************  movil  ***************/
+.ui-icon-ausencia {
+    background-image: url(images/ausente.png);
+    background-size: 18px 18px;
+}
+
+.ui-icon-permiso {
+    background-image: url(images/permiso.png);
+    background-size: 18px 18px;
+}
+
+.ui-icon-vacaciones {
+    background-image: url(images/vacaciones.png);
+    background-size: 18px 18px;
+}
+
+
+
+.ui-btn-block {
+  max-width:250px;
+  margin:0 auto !important;
+}
+.formulario {
+  background:none;
+  background-color: rgba(255,255,255,0.5);
+  
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  /*border-radius: 4px 4px 4px 4px;*/
+  box-shadow: 5px 5px 10px #888888;
+  padding: 10px;
+  margin:0px auto;
+}
+#login, #home, #ausencias, #empleados, #listado_empleados, #agenda, #solicitar_permisos, #solicitar_vacaciones, #vacaciones, #seleccionar_alternativa,#solicitar_sanconsultor,#solicitar_zonascomunes,#solicitar_javiercarrasco{
+	background-image:url(images/bg_extranet.jpg);
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-color:#fff;
+	color:#2859A6;
+}
+ .ui-header,  .ui-footer {
+	background:none;
+	border:none;
+}
+.ui-header {
+	color:#CD1F4C;
+	/*text-align:center;*/
+}
+.ui-header .ui-title {
+  margin:0;
+  white-space: nowrap;
+}
+ .ui-footer .ui-title,  .ui-footer{
+  font-size: 12px;
+  color:rgba(153,153,153,1);
+  font-weight:normal;
+}
+#menuHome {
+	width:190px;
+	margin:0 auto;
+}
+#menuHome a{
+	text-decoration:none;
+}
+#menuHome .btn-ausencias {
+	display:block;
+	float:left;
+	width:65px;
+	text-align:center;
+	margin:0 20px 25px 20px;
+}
+#menuHome .btn-empleados {
+	display:block;
+	float:left;
+	width:65px;
+	text-align:center;
+	margin:0 0px 25px 20px;
+}
+#menuHome .btn-agenda  {
+	display:block;
+	float:left;
+	width:65px;
+	text-align:center;
+	margin:0 20px 25px 20px;
+}
+#menuHome .btn-vacaciones {
+	display:block;
+	float:left;
+	width:65px;
+	text-align:center;
+	margin:0 0px 25px 20px;
+}
+#menuHome .btn-persmisos {
+	display:block;
+	width:190px;
+	text-align:center;
+	margin:0 auto;
+}
+#menuHome .btn-ausencias .sprite{
+	background-image:url(images/contactos-ico.png);
+	width:65px;
+	height:65px;
+	display:block;
+	background-repeat:no-repeat;
+}
+#menuHome .btn-empleados .sprite{
+	background-image:url(images/contactos-ico.png);
+	width:65px;
+	height:65px;
+	display:block;
+	background-repeat:no-repeat;
+}
+#menuHome .btn-agenda .sprite{
+	background-image:url(images/contactos-ico.png);
+	width:65px;
+	height:65px;
+	display:block;
+	background-repeat:no-repeat;
+}
+#menuHome .btn-vacaciones .sprite{
+	background-image:url(images/contactos-ico.png);
+	width:65px;
+	height:65px;
+	display:block;
+	background-repeat:no-repeat;
+}
+#menuHome .btn-persmisos .sprite{
+	background-image:url(images/contactos-ico.png);
+	width:65px;
+	height:65px;
+	display:block;
+	margin:0 auto;
+	background-repeat:no-repeat;
+}
+#menuHome .btn-ausencias .txt, #menuHome .btn-empleados .txt, #menuHome .btn-agenda .txt, #menuHome .btn-vacaciones .txt, #menuHome .btn-persmisos .txt{
+	font-size:10px;;
+}
+
+.cleared{
+	clear:both;
+	float:none;
+}
+#home .ui-content {
+  padding: 0;
+}
+#ausencias .ui-header, #empleados .ui-header, #listado_empleados .ui-header, #agenda .ui-header, #solicitar_permisos .ui-header#agenda .ui-header, #solicitar_permisos .ui-header, #agenda .ui-header, #solicitar_vacaciones .ui-header, #vacaciones .ui-header, #seleccionar_alternativa .ui-header,#solicitar_sanconsultor .ui-header,#solicitar_zonascomunes .ui-header,#solicitar_javiercarrasco .ui-header  {
+	text-align:center;
+}
+#ausencias .ui-header img, #empleados .ui-header img, #listado_empleados .ui-header img, #agenda .ui-header img, #solicitar_permisos .ui-header img{
+	margin-right:10px;
+}
+.centrado{
+	text-align:center;
+	margin:0 auto;
+}
+.ui-field-contain label.ui-select {
+  display: block;
+}
+.ui-field-contain {
+  max-width: 100%;
+}
+.ui-field-contain .ui-controlgroup-controls {
+  width: 100%;
+}
+.ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain .ui-input-search {
+  width: 100%;
+}
+.ui-content {
+  padding: 10px;
+}
+.ui-field-contain, .ui-mobile fieldset.ui-field-contain {
+  margin:0 0 1em 0;
+}
+
+#solicitar_sanconsultor label,#solicitar_zonascomunes label,#solicitar_javiercarrasco label{
+    margin-top:5px;
+}
+
+#cal_zonascomunes,#cal_javiercarrasco {
+    height:260px;
+}
+
+#year2 li {
+    height: 150px;
+    padding: 0 0.5em 0.5em 0;
+    list-style-type: none;
+}
+
+.green_cell{
+    background-color: darkgreen;
+}
+.disfrutadas {
+    background: none repeat scroll 0 0 #993300;
+    color: white;
+}
+.ui-listview .ui-li-icon{
+    max-height: 30px;
+    max-width: 30px;
+    top:6px;
+}
+
+.ui-header-fixed { 
+    background-image:url(images/bg_extranet.jpg);
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-color:#fff;
+    border-bottom: 1px solid #999;
+    box-shadow: 1px 1px 5px #888888;
+}

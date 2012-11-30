@@ -1,0 +1,17 @@
+@charset "utf-8";
+#login .ui-content {
+	  padding: 0 10px 10px;
+	  width:80%;
+}
+
+.centradoNoText{
+	margin:0 auto;
+	width:80%;
+}
+#empleados .ui-field-contain .ui-select, #agenda .ui-field-contain .ui-select, #solicitar_permisos .ui-field-contain .ui-select, #solicitar_vacaciones .ui-field-contain .ui-select {
+  display: inline-block;
+  width: 100%;
+}
+.ui-field-contain label.ui-input-text {
+  width: 100%;
+}
